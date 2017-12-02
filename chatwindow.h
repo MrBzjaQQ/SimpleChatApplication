@@ -17,6 +17,12 @@ public:
 
 private:
     Ui::ChatWindow *ui;
+public slots:
+    void OpenConnectDialog();
+    void DisconnectFromChat();
+    void ClearHistory();
+    void OpenInformationAboutYou();
+    void CreateRoom();
 };
 
 #endif // CHATWINDOW_H

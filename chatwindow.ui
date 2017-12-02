@@ -62,6 +62,11 @@
     </item>
     <item row="0" column="0">
      <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>LastMessages</string>
       </property>
@@ -69,13 +74,18 @@
     </item>
     <item row="0" column="3">
      <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>Connected companions</string>
       </property>
      </widget>
     </item>
     <item row="3" column="1" colspan="3">
-     <widget class="QTextEdit" name="textEdit_3">
+     <widget class="QTextEdit" name="messageBox">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
         <horstretch>0</horstretch>
@@ -108,7 +118,7 @@ p, li { white-space: pre-wrap; }
      </spacer>
     </item>
     <item row="1" column="0" colspan="2">
-     <widget class="QTextEdit" name="textEdit">
+     <widget class="QTextEdit" name="chatHistory">
       <property name="html">
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -130,6 +140,20 @@ p, li { white-space: pre-wrap; }
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionCreate_room"/>
+    <addaction name="separator"/>
+    <addaction name="actionConnect_to_the_room"/>
+    <addaction name="actionDisconnect_from_the_room"/>
+    <addaction name="separator"/>
+    <addaction name="actionClear_history"/>
+    <addaction name="separator"/>
+    <addaction name="actionInformation_about_you"/>
+   </widget>
+   <addaction name="menuFile"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -140,6 +164,31 @@ p, li { white-space: pre-wrap; }
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionCreate_room">
+   <property name="text">
+    <string>Create room</string>
+   </property>
+  </action>
+  <action name="actionConnect_to_the_room">
+   <property name="text">
+    <string>Connect to the room</string>
+   </property>
+  </action>
+  <action name="actionDisconnect_from_the_room">
+   <property name="text">
+    <string>Disconnect from the room</string>
+   </property>
+  </action>
+  <action name="actionClear_history">
+   <property name="text">
+    <string>Clear history</string>
+   </property>
+  </action>
+  <action name="actionInformation_about_you">
+   <property name="text">
+    <string>Information about you</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

@@ -25,10 +25,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        chatwindow.cpp
+        chatwindow.cpp \
+    connecttothechat.cpp \
+    roomcreationwindow.cpp
 
 HEADERS += \
-        chatwindow.h
+        chatwindow.h \
+    connecttothechat.h \
+    roomcreationwindow.h
 
 FORMS += \
-        chatwindow.ui
+        chatwindow.ui \
+    connecttothechat.ui \
+    roomcreationwindow.ui
