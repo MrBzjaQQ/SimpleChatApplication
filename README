@@ -1,0 +1,15 @@
+# SimpleChatApplication
+This is simple App for simple chatting.
+
+Functions to do:
+* Create chat rooms;
+* Connect to the chat room;
+* Show info about you (IP, Nickname (with able to change), ...);
+* Messaging in chat.
+
+Realisations to do:
+* Create Server-side class (room);
+* Create Client-side class (client);
+* ... maybe something else.
+
+I do it for fun and relaxing after studying and work.
