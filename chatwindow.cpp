@@ -2,6 +2,7 @@
 #include "ui_chatwindow.h"
 #include "connecttothechat.h"
 #include "roomcreationwindow.h"
+#include "aboutuserinformation.h"
 ChatWindow::ChatWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::ChatWindow)
@@ -41,7 +42,8 @@ void ChatWindow::ClearHistory()
 
 void ChatWindow::OpenInformationAboutYou()
 {
-
+    AboutUserInformation *info = new AboutUserInformation(this);
+    info->show();
 }
 
 void ChatWindow::CreateRoom()

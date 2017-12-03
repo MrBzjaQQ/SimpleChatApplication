@@ -27,14 +27,17 @@ SOURCES += \
         main.cpp \
         chatwindow.cpp \
     connecttothechat.cpp \
-    roomcreationwindow.cpp
+    roomcreationwindow.cpp \
+    aboutuserinformation.cpp
 
 HEADERS += \
         chatwindow.h \
     connecttothechat.h \
-    roomcreationwindow.h
+    roomcreationwindow.h \
+    aboutuserinformation.h
 
 FORMS += \
         chatwindow.ui \
     connecttothechat.ui \
-    roomcreationwindow.ui
+    roomcreationwindow.ui \
+    aboutuserinformation.ui
